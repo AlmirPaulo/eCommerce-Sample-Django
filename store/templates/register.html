@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="collection_text mb-2">Register Now!</div>
+<div class="layout_padding">
+    <center><form class='p-3' action="{{ url_for('auth.register') }}" method='POST'>
+    <input class="form-control" type="text" name='username' placeholder='Username' required style="width:30%">
+     <input class="form-control mt-1" type="text" name='email' placeholder='Email' required style="width:30%">
+     <input class="form-control mt-1" type="password" name='pass' placeholder='Password' required style="width:30%" style="width:30%">
+ <input class="form-control mt-1" type="password" name='conf-pass' placeholder='Confirm Password' required style="width:30%">
+     <br>
+     <button class="btn btn-primary">Register</button>
+     {% with msgs = get_flashed_messages(with_categories=True) %}
+        {% if msgs %}   
+            {% for category, msg in msgs %}
+                {% if category == 'error' %}
+                <span class="text-danger">{{ msg }}</span>
+
+                {% endif %}
+                {% if category == 'success' %}
+                <span class="text-success">{{ msg }}</span>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+     {% endwith %}
+        </form></center>
+</div>
+
+{% endblock %}
