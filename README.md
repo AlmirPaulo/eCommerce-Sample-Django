@@ -4,11 +4,11 @@
 
 An eCommerce website sample built in Python with Django. 
 
-A have started a similar project in Flask, but I have decided to restart the ideia with this one. 
+A have started a similar project in Flask, but I have decided to restart the ideia with Django once this a most used framework in projects like this. 
 
-The idea behind this project is to figure out on my portfolio to show my backend skills. Of course, you can use this in order to study Django, Python, Backend, etc. 
+The idea behind this project is to figure out on my portfolio to show my skills. Of course, you can use this in order to study Django, Python, etc. 
 
-![image]()
+<!--![image]()
 
 ### **[Live Demo]()**
 
@@ -17,7 +17,7 @@ The idea behind this project is to figure out on my portfolio to show my backend
 * Authentication (login/registration)
 * Payment simulation (behind an API)
 * Email confirmation ??
-* Third party API implementation
+* Third party APIs implementation
 
 
 ## Technologies
@@ -25,4 +25,6 @@ The idea behind this project is to figure out on my portfolio to show my backend
 * Python
 * Django
 * SQL (via ORM)
+* APIs...
+
 
